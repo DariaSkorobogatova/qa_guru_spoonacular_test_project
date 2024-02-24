@@ -1,0 +1,1 @@
+# qa_guru_spoonacular_ui_api
