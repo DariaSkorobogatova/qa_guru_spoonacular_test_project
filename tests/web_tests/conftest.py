@@ -15,7 +15,7 @@ def load_env():
 
 @pytest.fixture(scope='function', autouse=True)
 def browser_configs():
-    browser.config.base_url = 'https://www.chitai-gorod.ru'
+    browser.config.base_url = 'https://spoonacular.com/'
     config.window_width = 1920
     config.window_height = 1080
     options = Options()
