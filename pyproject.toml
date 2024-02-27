@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "qa-guru-spoonacular-ui-api"
+version = "0.1.0"
+description = ""
+authors = ["Daria Skorobogatova <daria.skorobogatova@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selene = "^2.0.0rc4"
+pytest = "^7.4.0"
+jsonschema = "^4.21.1"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+allure-pytest = "^2.13.2"
+appium-python-client = "3.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
