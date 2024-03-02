@@ -1,0 +1,1589 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "original": {
+      "type": "string"
+    },
+    "originalName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "unitShort": {
+      "type": "string"
+    },
+    "unitLong": {
+      "type": "string"
+    },
+    "possibleUnits": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value",
+        "unit"
+      ]
+    },
+    "consistency": {
+      "type": "string"
+    },
+    "aisle": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "meta": {
+      "type": "array",
+      "items": {}
+    },
+    "nutrition": {
+      "type": "object",
+      "properties": {
+        "nutrients": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                },
+                "percentOfDailyNeeds": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit",
+                "percentOfDailyNeeds"
+              ]
+            }
+          ]
+        },
+        "properties": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            }
+          ]
+        },
+        "flavonoids": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "amount",
+                "unit"
+              ]
+            }
+          ]
+        },
+        "caloricBreakdown": {
+          "type": "object",
+          "properties": {
+            "percentProtein": {
+              "type": "number"
+            },
+            "percentFat": {
+              "type": "number"
+            },
+            "percentCarbs": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "percentProtein",
+            "percentFat",
+            "percentCarbs"
+          ]
+        },
+        "weightPerServing": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "integer"
+            },
+            "unit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "unit"
+          ]
+        }
+      },
+      "required": [
+        "nutrients",
+        "properties",
+        "flavonoids",
+        "caloricBreakdown",
+        "weightPerServing"
+      ]
+    },
+    "categoryPath": {
+      "type": "array",
+      "items": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string"
+        }
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "original",
+    "originalName",
+    "name",
+    "amount",
+    "unit",
+    "unitShort",
+    "unitLong",
+    "possibleUnits",
+    "estimatedCost",
+    "consistency",
+    "aisle",
+    "image",
+    "meta",
+    "nutrition",
+    "categoryPath"
+  ]
+}

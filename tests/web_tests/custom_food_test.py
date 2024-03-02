@@ -6,8 +6,8 @@ from spoonacular_test_project.pages.web_pages.user_profile_page import profile
 
 
 @allure.epic('profile settings')
-@allure.label("owner", "daria_skorobogatova")
-@allure.feature("Adding custom food")
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('Adding custom food')
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')

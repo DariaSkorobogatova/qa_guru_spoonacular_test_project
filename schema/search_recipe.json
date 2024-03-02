@@ -1,0 +1,138 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "imageType": {
+              "type": "string"
+            },
+            "nutrition": {
+              "type": "object",
+              "properties": {
+                "nutrients": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        },
+                        "unit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "amount",
+                        "unit"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "nutrients"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "image",
+            "imageType",
+            "nutrition"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            },
+            "imageType": {
+              "type": "string"
+            },
+            "nutrition": {
+              "type": "object",
+              "properties": {
+                "nutrients": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "number"
+                        },
+                        "unit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "name",
+                        "amount",
+                        "unit"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "nutrients"
+              ]
+            }
+          },
+          "required": [
+            "id",
+            "title",
+            "image",
+            "imageType",
+            "nutrition"
+          ]
+        }
+      ]
+    },
+    "offset": {
+      "type": "integer"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "totalResults": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "offset",
+    "number",
+    "totalResults"
+  ]
+}

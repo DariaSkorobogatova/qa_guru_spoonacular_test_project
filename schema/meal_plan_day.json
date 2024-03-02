@@ -1,0 +1,131 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "meals": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "imageType": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "readyInMinutes": {
+              "type": "integer"
+            },
+            "servings": {
+              "type": "integer"
+            },
+            "sourceUrl": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "imageType",
+            "title",
+            "readyInMinutes",
+            "servings",
+            "sourceUrl"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "imageType": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "readyInMinutes": {
+              "type": "integer"
+            },
+            "servings": {
+              "type": "integer"
+            },
+            "sourceUrl": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "imageType",
+            "title",
+            "readyInMinutes",
+            "servings",
+            "sourceUrl"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "imageType": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "readyInMinutes": {
+              "type": "integer"
+            },
+            "servings": {
+              "type": "integer"
+            },
+            "sourceUrl": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "imageType",
+            "title",
+            "readyInMinutes",
+            "servings",
+            "sourceUrl"
+          ]
+        }
+      ]
+    },
+    "nutrients": {
+      "type": "object",
+      "properties": {
+        "calories": {
+          "type": "number"
+        },
+        "protein": {
+          "type": "number"
+        },
+        "fat": {
+          "type": "number"
+        },
+        "carbohydrates": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "calories",
+        "protein",
+        "fat",
+        "carbohydrates"
+      ]
+    }
+  },
+  "required": [
+    "meals",
+    "nutrients"
+  ]
+}

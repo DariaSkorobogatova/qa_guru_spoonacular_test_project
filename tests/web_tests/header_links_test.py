@@ -10,8 +10,8 @@ titles_and_urls = [
 
 
 @allure.epic('main page header')
-@allure.label("owner", "daria_skorobogatova")
-@allure.feature("Checking the titles and urls")
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('Checking the title')
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')
@@ -24,6 +24,13 @@ def test_check_main_title():
         main.assert_main_title_text('All Your Food. One Place.')
 
 
+@allure.epic('main page header')
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('Checking urls')
+@allure.label('microservice', 'WEB')
+@allure.tag('regress', 'web', 'normal')
+@allure.severity('normal')
+@allure.label('layer', 'web')
 @pytest.mark.parametrize('title, url', titles_and_urls)
 def test_recipe_circle(title, url):
     with allure.step("Open the main page"):

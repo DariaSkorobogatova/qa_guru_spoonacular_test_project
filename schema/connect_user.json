@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "username": {
+      "type": "string"
+    },
+    "spoonacularPassword": {
+      "type": "string"
+    },
+    "hash": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "username",
+    "spoonacularPassword",
+    "hash"
+  ]
+}

@@ -6,8 +6,8 @@ from spoonacular_test_project.pages.web_pages.register_page import register
 
 
 @allure.epic('registration')
-@allure.label("owner", "daria_skorobogatova")
-@allure.feature("Checking unsuccessful registration without captcha")
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('Checking unsuccessful registration without captcha')
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')
@@ -37,8 +37,8 @@ def test_unsuccessful_registration_without_captcha():
 
 
 @allure.epic('registration')
-@allure.label("owner", "daria_skorobogatova")
-@allure.feature("After clicking captcha appears select images block")
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('After clicking captcha appears select images block')
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')

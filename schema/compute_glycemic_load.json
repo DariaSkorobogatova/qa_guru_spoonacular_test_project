@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "totalGlycemicLoad": {
+      "type": "number"
+    },
+    "ingredients": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "original": {
+              "type": "string"
+            },
+            "glycemicIndex": {
+              "type": "number"
+            },
+            "glycemicLoad": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "original",
+            "glycemicIndex",
+            "glycemicLoad"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "original": {
+              "type": "string"
+            },
+            "glycemicIndex": {
+              "type": "number"
+            },
+            "glycemicLoad": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "original",
+            "glycemicIndex",
+            "glycemicLoad"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "original": {
+              "type": "string"
+            },
+            "glycemicIndex": {
+              "type": "number"
+            },
+            "glycemicLoad": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "id",
+            "original",
+            "glycemicIndex",
+            "glycemicLoad"
+          ]
+        }
+      ]
+    }
+  },
+  "required": [
+    "totalGlycemicLoad",
+    "ingredients"
+  ]
+}

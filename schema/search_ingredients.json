@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "results": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "image"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "image"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "image": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "image"
+          ]
+        }
+      ]
+    },
+    "offset": {
+      "type": "integer"
+    },
+    "number": {
+      "type": "integer"
+    },
+    "totalResults": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "results",
+    "offset",
+    "number",
+    "totalResults"
+  ]
+}

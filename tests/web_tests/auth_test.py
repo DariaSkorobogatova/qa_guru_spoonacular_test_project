@@ -5,8 +5,8 @@ from spoonacular_test_project.pages.web_pages.main_page import main
 
 
 @allure.epic('authorisation')
-@allure.label("owner", "daria_skorobogatova")
-@allure.feature("Checking successful authorization")
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('Checking successful authorization')
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')
@@ -33,8 +33,8 @@ def test_successful_authorisation():
 
 
 @allure.epic('authorisation')
-@allure.label("owner", "daria_skorobogatova")
-@allure.feature("Checking unsuccessful authorization")
+@allure.label('owner', 'daria_skorobogatova')
+@allure.feature('Checking unsuccessful authorization')
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
 @allure.severity('normal')

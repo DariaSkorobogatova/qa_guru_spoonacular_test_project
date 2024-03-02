@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "measures": {
+      "type": "object",
+      "properties": {
+        "original": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "unit"
+          ]
+        },
+        "metric": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "unit"
+          ]
+        },
+        "us": {
+          "type": "object",
+          "properties": {
+            "amount": {
+              "type": "number"
+            },
+            "unit": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "amount",
+            "unit"
+          ]
+        }
+      },
+      "required": [
+        "original",
+        "metric",
+        "us"
+      ]
+    },
+    "usages": {
+      "type": "array",
+      "items": {}
+    },
+    "usageRecipeIds": {
+      "type": "array",
+      "items": {}
+    },
+    "pantryItem": {
+      "type": "boolean"
+    },
+    "aisle": {
+      "type": "string"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "ingredientId": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "measures",
+    "usages",
+    "usageRecipeIds",
+    "pantryItem",
+    "aisle",
+    "cost",
+    "ingredientId"
+  ]
+}
