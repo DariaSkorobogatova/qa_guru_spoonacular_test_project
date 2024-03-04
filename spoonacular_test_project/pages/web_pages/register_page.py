@@ -21,13 +21,14 @@ class RegisterPage:
         return self
 
     def delay(self):
-        time.sleep(7)
+        time.sleep(5)
 
     def click_captcha(self):
         frames = browser.driver.find_elements(By.TAG_NAME, 'iframe')
         browser.driver.switch_to.frame(frames[0])
         self.delay()
         browser.element('.recaptcha-checkbox-border').should(be.visible).click()
+        self.delay()
         return self
 
     def assert_image_select_block(self):
