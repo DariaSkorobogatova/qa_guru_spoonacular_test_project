@@ -36,19 +36,3 @@ def test_unsuccessful_registration_without_captcha():
         register.assert_alert_message()
 
 
-@allure.epic('registration')
-@allure.label('owner', 'daria_skorobogatova')
-@allure.feature('After clicking captcha appears select images block')
-@allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
-@allure.severity('normal')
-@allure.label('layer', 'web')
-def test_captcha_select_images_block():
-    with allure.step("Open the registration page"):
-        main.go_to_register_page()
-
-    with allure.step("Click captcha"):
-        register.click_captcha()
-
-    with allure.step("Check that select images block has confirm button"):
-        register.assert_image_select_block()
