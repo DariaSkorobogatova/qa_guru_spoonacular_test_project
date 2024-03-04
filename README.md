@@ -62,10 +62,10 @@ pytest tests
 
 * #### Пример отчета о прохождении ui-теста
 ![This is an image](design/image/ui_test_example.png)
-* #### Пример отчета о прохождении api-теста
-![This is an image](design/image/api_test_example.png)
 * #### Пример видео прохождения ui-автотеста
 ![autotest_gif](design/image/test.gif)
+* #### Пример отчета о прохождении api-теста
+![This is an image](design/image/api_test_example.png)
 
 ## Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/project/4097/dashboards">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
