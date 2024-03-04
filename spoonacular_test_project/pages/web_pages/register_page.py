@@ -27,7 +27,7 @@ class RegisterPage:
         frames = browser.driver.find_elements(By.TAG_NAME, 'iframe')
         browser.driver.switch_to.frame(frames[0])
         self.delay()
-        browser.element('.recaptcha-checkbox-border').click()
+        browser.element('.recaptcha-checkbox-border').should(be.visible).click()
         return self
 
     def assert_image_select_block(self):
