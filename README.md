@@ -52,3 +52,43 @@ pytest tests
 4. Нажать кнопку `Build`
 5. Результат запуска сборки можно посмотреть в отчёте Allure
 
+----
+### Allure отчет
+
+
+#### Общие результаты
+
+#### Список тест кейсов
+
+#### Пример отчета о прохождении ui-теста
+![This is an image](design/image/ui_test_example.png)
+#### Пример отчета о прохождении api-теста
+![This is an image](design/image/api_test_example.png)
+
+----
+### Полная статистика по прохождению тестпланов, отчёты и приложения к ним хранятся в Allure TestOps
+> <a target="_blank" href="https://allure.autotests.cloud/project/4097/dashboards">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
+
+#### Общий список всех кейсов, имеющихся в системе (без разделения по тест-планам и виду выполнения тестирования)
+![This is an image](design/image/test_ops_testcases.png)
+
+#### Пример отчёта выполнения одного из автотестов
+![This is an image](design/image/test_ops_example_test.png)
+
+#### Тестовые артефакты
+![This is an image](design/image/test_ops_artefacts.png)
+
+#### Пример dashboard с общими результатами тестирования
+![This is an image](design/image/dashboard.png)
+
+#### История запуска тестовых наборов
+![This is an image](design/image/launch_history.png)
+
+----
+### Оповещение о результатах прогона тестов в Telegram
+![This is an image](design/image/tg_notification.png)
+
+----
+### Пример видео прохождения ui-автотеста
+![autotest_gif](design/image/test.gif)
+
