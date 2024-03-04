@@ -1,9 +1,15 @@
 from selene import browser, be, have
+import time
+import random
 
 
 class ForgotPasswordPage:
+    def delay(self):
+        time.sleep(random.randint(4, 5))
+
     def enter_email(self, email):
         browser.element('#email').should(be.visible).type(email[:5])
+        self.delay()
         browser.element('#email').should(be.visible).type(email[5:])
         return self
 

@@ -21,7 +21,7 @@ class RegisterPage:
         return self
 
     def delay(self):
-        time.sleep(random.randint(2, 3))
+        time.sleep(random.randint(4, 5))
 
     def click_captcha(self):
         frames = browser.driver.find_elements(By.TAG_NAME, 'iframe')
