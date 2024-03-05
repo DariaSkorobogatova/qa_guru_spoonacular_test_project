@@ -19,6 +19,7 @@ def test_reset_link_sent_success_alert_message():
 
     with allure.step("Enter registered user email"):
         forgot_password.enter_email(email)
+        forgot_password.click_send_button()
 
     with allure.step("Assert success alert message appeared"):
         forgot_password.assert_success_alert_message('The password reset request has been sent.')
