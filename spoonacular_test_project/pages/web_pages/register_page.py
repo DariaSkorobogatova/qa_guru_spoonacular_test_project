@@ -5,7 +5,8 @@ class RegisterPage:
     def fill_register_form(self, user):
         browser.element('#firstname').should(be.visible).type(user.login)
         browser.element('#email').should(be.visible).type(user.email)
-        browser.element('#username').should(be.visible).type(user.login)
+        browser.element('#username').should(be.visible).type(user.login[:5])
+        browser.element('#username').should(be.visible).type(user.login[5:])
         browser.element('#password').should(be.visible).type(user.password)
         return self
 
