@@ -57,9 +57,9 @@ pytest tests
 
 
 * #### Общие результаты
-
+![This is an image](design/image/allure_reports.png)
 * #### Список тест кейсов
-
+![This is an image](design/image/allure_test_lists.png)
 * #### Пример отчета о прохождении ui-теста
 ![This is an image](design/image/ui_test_example.png)
 * #### Пример видео прохождения ui-автотеста
