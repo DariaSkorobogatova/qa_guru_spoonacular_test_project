@@ -2,7 +2,7 @@ import allure
 import os
 import jsonschema
 from spoonacular_test_project.helper.load_schema import load_schema
-from spoonacular_test_project.helper.api_requests import api_get, api_post
+from spoonacular_test_project.helper.api_requests import api_get
 
 
 @allure.epic('API. Meal planner')
@@ -15,8 +15,12 @@ from spoonacular_test_project.helper.api_requests import api_get, api_post
 def test_generate_meal_plan_day():
     schema = load_schema('meal_plan_day.json')
     api_key = os.getenv('API_key')
-    url = f'mealplanner/generate?apiKey={api_key}&timeFrame=day'
-    response = api_get(url)
+    url = 'mealplanner/generate'
+    params = {
+        'apiKey': api_key,
+        'timeFrame': 'day'
+    }
+    response = api_get(url, params=params)
     assert response.status_code == 200
     jsonschema.validate(response.json(), schema)
     assert len(response.json().get('meals')) == 3
@@ -32,8 +36,13 @@ def test_generate_meal_plan_day():
 def test_generate_meal_plan_with_calories_limit(calories=2000):
     schema = load_schema('meal_plan_day.json')
     api_key = os.getenv('API_key')
-    url = f'mealplanner/generate?apiKey={api_key}&timeFrame=day&targetCalories={calories}'
-    response = api_get(url)
+    url = 'mealplanner/generate'
+    params = {
+        'apiKey': api_key,
+        'timeFrame': 'day',
+        'targetCalories': calories
+    }
+    response = api_get(url, params=params)
     body = response.json()
     assert response.status_code == 200
     jsonschema.validate(body, schema)
@@ -51,8 +60,12 @@ def test_generate_meal_plan_with_calories_limit(calories=2000):
 def test_generate_meal_plan_week():
     schema = load_schema('meal_plan_week.json')
     api_key = os.getenv('API_key')
-    url = f'mealplanner/generate?apiKey={api_key}&timeFrame=week'
-    response = api_get(url)
+    url = 'mealplanner/generate'
+    params = {
+        'apiKey': api_key,
+        'timeFrame': 'week'
+    }
+    response = api_get(url, params=params)
     body = response.json()
     assert response.status_code == 200
     jsonschema.validate(body, schema)

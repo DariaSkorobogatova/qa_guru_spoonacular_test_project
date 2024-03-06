@@ -30,6 +30,3 @@ def test_add_custom_food(value='pasta'):
 
     with allure.step("Delete custom food"):
         profile.delete_custom_food()
-
-
-

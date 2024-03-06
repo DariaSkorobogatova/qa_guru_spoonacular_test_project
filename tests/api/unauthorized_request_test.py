@@ -17,7 +17,8 @@ def test_unauthorized_request():
     response = api_get(url)
     assert response.status_code == 401
     jsonschema.validate(response.json(), schema)
-    assert response.json()['message'] == 'You are not authorized. Please read https://spoonacular.com/food-api/docs#Authentication'
+    assert response.json()[
+               'message'] == 'You are not authorized. Please read https://spoonacular.com/food-api/docs#Authentication'
 
 
 @allure.epic('API. Unauthorized request')
@@ -30,8 +31,14 @@ def test_unauthorized_request():
 def test_request_with_non_existing_key():
     schema = load_schema('unauthorized_request.json')
     api_key = '101239sdhwo3923hd328h382f'
-    url = f'food/ingredients/search?apiKey={api_key}&query=ice cream&number=1'
-    response = api_get(url)
+    url = f'food/ingredients/search'
+    params = {
+        'apiKey': api_key,
+        'query': 'ice cream',
+        'number': 1
+    }
+    response = api_get(url, params=params)
     assert response.status_code == 401
     jsonschema.validate(response.json(), schema)
-    assert response.json()['message'] == 'You are not authorized. Please read https://spoonacular.com/food-api/docs#Authentication'
+    assert response.json()[
+               'message'] == 'You are not authorized. Please read https://spoonacular.com/food-api/docs#Authentication'

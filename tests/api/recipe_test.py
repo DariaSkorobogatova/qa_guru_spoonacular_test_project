@@ -15,8 +15,14 @@ from spoonacular_test_project.helper.api_requests import api_get
 def test_search_recipe(recipe='pasta', fat=25):
     schema = load_schema('search_recipe.json')
     api_key = os.getenv('API_key')
-    url = f'recipes/complexSearch?apiKey={api_key}&query={recipe}&maxFat={fat}&number=2'
-    response = api_get(url)
+    url = 'recipes/complexSearch'
+    params = {
+        'apiKey': api_key,
+        'query': recipe,
+        'maxFat': fat,
+        'number': 2
+    }
+    response = api_get(url, params=params)
     body = response.json()
     assert response.status_code == 200
     jsonschema.validate(body, schema)
@@ -38,11 +44,22 @@ def test_search_recipe(recipe='pasta', fat=25):
 def test_search_similar_recipe():
     schema = load_schema('search_similar_recipe.json')
     api_key = os.getenv('API_key')
-    url = f'recipes/complexSearch?apiKey={api_key}&query=pasta&maxFat=25&number=1'
-    recipe_id = api_get(url).json().get('results')[0].get('id')
-    url = f'recipes/{recipe_id}/similar?apiKey={api_key}&number=1'
-    response = api_get(url)
+    url = 'recipes/complexSearch'
+    params = {
+        'apiKey': api_key,
+        'query': 'pasta',
+        'maxFat': 25,
+        'number': 1
+    }
+    response = api_get(url, params=params).json().get('results')[0].get('id')
+    print(response)
+    recipe_id = api_get(url, params=params).json().get('results')[0].get('id')
+    url = f'recipes/{recipe_id}/similar'
+    params = {
+        'apiKey': api_key,
+        'number': 1
+    }
+    response = api_get(url, params=params)
     assert response.status_code == 200
     jsonschema.validate(response.json(), schema)
     assert len(response.json()) == 1
-

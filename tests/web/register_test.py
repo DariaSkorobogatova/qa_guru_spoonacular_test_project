@@ -13,7 +13,6 @@ from spoonacular_test_project.pages.web_pages.register_page import register
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_unsuccessful_registration_without_captcha():
-
     user = User(
         login=os.getenv('UNREGISTERED_USER_LOGIN'),
         email=os.getenv('UNREGISTERED_USER_EMAIL'),
@@ -34,5 +33,3 @@ def test_unsuccessful_registration_without_captcha():
 
     with allure.step("Check that alert message appeared"):
         register.assert_alert_message()
-
-

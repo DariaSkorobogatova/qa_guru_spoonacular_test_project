@@ -17,8 +17,13 @@ from spoonacular_test_project.helper.api_requests import api_get, api_post
 def test_search_ingredients(ingredient):
     schema = load_schema('search_ingredients.json')
     api_key = os.getenv('API_key')
-    url = f'food/ingredients/search?apiKey={api_key}&query={ingredient}&number=3'
-    response = api_get(url)
+    url = 'food/ingredients/search'
+    params = {
+        'apiKey': api_key,
+        'query': ingredient,
+        'number': 3
+    }
+    response = api_get(url, params=params)
     body = response.json()
     assert response.status_code == 200
     jsonschema.validate(body, schema)
@@ -38,8 +43,13 @@ def test_search_ingredients(ingredient):
 def test_search_non_existing_ingredient(ingredient='ksjhfkjds'):
     schema = load_schema('search_ingredients.json')
     api_key = os.getenv('API_key')
-    url = f'food/ingredients/search?apiKey={api_key}&query={ingredient}&number=3'
-    response = api_get(url)
+    url = 'food/ingredients/search'
+    params = {
+        'apiKey': api_key,
+        'query': ingredient,
+        'number': 3
+    }
+    response = api_get(url, params=params)
     body = response.json()
     assert response.status_code == 200
     assert body.get('results') == []
@@ -56,10 +66,18 @@ def test_search_non_existing_ingredient(ingredient='ksjhfkjds'):
 def test_get_ingredient_info():
     schema = load_schema('ingredient_info.json')
     api_key = os.getenv('API_key')
-    ingredient_id = api_get(f'food/ingredients/search?apiKey={api_key}&query=ice cream').json().get('results')[0].get(
-        'id')
-    url = f'food/ingredients/{ingredient_id}/information?apiKey={api_key}&amount=1'
-    response = api_get(url)
+    url = 'food/ingredients/search'
+    params = {
+        'apiKey': api_key,
+        'query': 'ice cream'
+    }
+    ingredient_id = api_get(url, params=params).json().get('results')[0].get('id')
+    url = f'food/ingredients/{ingredient_id}/information'
+    params = {
+        'apiKey': api_key,
+        'amount': 1
+    }
+    response = api_get(url, params=params)
     body = response.json()
     assert response.status_code == 200
     jsonschema.validate(body, schema)
@@ -81,8 +99,12 @@ def test_get_ingredient_info():
 def test_get_ingredient_info_with_invalid_id(ingredient_id=0):
     schema = load_schema('invalid_ingredient_id.json')
     api_key = os.getenv('API_key')
-    url = f'food/ingredients/{ingredient_id}/information?apiKey={api_key}&amount=1'
-    response = api_get(url)
+    url = f'food/ingredients/{ingredient_id}/information'
+    params = {
+        'apiKey': api_key,
+        'amount': 1
+    }
+    response = api_get(url, params=params)
     assert response.status_code == 404
     jsonschema.validate(response.json(), schema)
     assert response.json()['message'] == 'An ingredient with the id 0 does not exist.'
@@ -98,7 +120,10 @@ def test_get_ingredient_info_with_invalid_id(ingredient_id=0):
 def test_compute_glycemic_load():
     schema = load_schema('compute_glycemic_load.json')
     api_key = os.getenv('API_key')
-    url = f'food/ingredients/glycemicLoad?apiKey={api_key}'
+    url = 'food/ingredients/glycemicLoad'
+    params = {
+        'apiKey': api_key
+    }
     data = {
         "ingredients": [
             "1 kiwi",
@@ -106,7 +131,7 @@ def test_compute_glycemic_load():
             "2 glasses of water"
         ]
     }
-    response = api_post(url, json=data)
+    response = api_post(url, json=data, params=params)
     body = response.json()
     assert response.status_code == 200
     jsonschema.validate(body, schema)

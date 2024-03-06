@@ -17,20 +17,26 @@ def test_add_and_delete_item_from_shopping_list(get_user_info):
     api_key = os.getenv('API_key')
     username = get_user_info[0]
     user_hash = get_user_info[1]
-    url_add = f'mealplanner/{username}/shopping-list/items?apiKey={api_key}&hash={user_hash}'
+    url_add = f'mealplanner/{username}/shopping-list/items'
     item = {
         "item": "1 package baking powder",
         "aisle": "Baking",
         "parse": True
     }
-    response_add = api_post(url_add, json=item)
+    params = {
+        'apiKey': api_key,
+        'hash': user_hash
+    }
+    response_add = api_post(url_add, json=item, params=params)
     jsonschema.validate(response_add.json(), schema)
     assert response_add.status_code == 200
     assert response_add.json().get('name') == 'baking powder'
     item_id = response_add.json().get('id')
-    url_delete = f'mealplanner/{username}/shopping-list/items/{item_id}?apiKey={api_key}&hash={user_hash}'
-    response_delete = api_delete(url_delete)
+    url_delete = f'mealplanner/{username}/shopping-list/items/{item_id}'
+    params = {
+        'apiKey': api_key,
+        'hash': user_hash
+    }
+    response_delete = api_delete(url_delete, params=params)
     assert response_delete.status_code == 200
     assert response_delete.json().get('status') == 'success'
-
-

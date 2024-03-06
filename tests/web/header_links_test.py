@@ -3,9 +3,10 @@ from spoonacular_test_project.pages.web_pages.main_page import main
 import pytest
 
 titles_and_urls = [
-        ['Save and organize recipes from any site', 'articles/how-to-use-the-spoonacular-recipe-saver-and-recipe-bookmarklet'],
-        ['Free meal planner and food tracker', 'meal-planner'],
-        ['Collect your favorite products', 'high-protein-organic-granola-bar']
+    ['Save and organize recipes from any site',
+     'articles/how-to-use-the-spoonacular-recipe-saver-and-recipe-bookmarklet'],
+    ['Free meal planner and food tracker', 'meal-planner'],
+    ['Collect your favorite products', 'high-protein-organic-granola-bar']
 ]
 
 

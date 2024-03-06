@@ -12,7 +12,6 @@ from spoonacular_test_project.pages.web_pages.main_page import main
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_successful_authorisation():
-
     user = User(
         login=os.getenv('USER_LOGIN'),
         email=os.getenv('USER_EMAIL'),
@@ -40,7 +39,6 @@ def test_successful_authorisation():
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_unsuccessful_authorisation():
-
     user = User(
         login=os.getenv('UNREGISTERED_USER_LOGIN'),
         email=os.getenv('UNREGISTERED_USER_EMAIL'),
@@ -58,4 +56,3 @@ def test_unsuccessful_authorisation():
 
     with allure.step("Check that user has not been authorized"):
         main.assert_unsuccessful_authorisation()
-
