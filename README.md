@@ -1,7 +1,7 @@
 <h2> Проект по тестированию UI и API Spoonacular 
 <h2> С помощью Spoonacular можно выбирать и создавать рецепты, планы питания, управлять списком покупок и многое другое </h2>
 
-> <a target="_blank" href="https://spoonacular.com/">Ссылка на сайт</a>
+> <a target="_blank" href="https://spoonacular.com/">Ссылка на сайт</a><br>
 > <a target="_blank" href="https://spoonacular.com/food-api">Ссылка на api документацию</a>
 ![This is an image](design/image/spoonacular.png)
 
