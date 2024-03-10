@@ -13,10 +13,13 @@ def load_env():
 def get_user_info():
     username = os.getenv('dasha_skorobogatova')
     api_key = os.getenv('API_key')
-    url = f'users/connect?apiKey={api_key}'
+    url = f'users/connect'
+    params = {
+        'apiKey': api_key
+    }
     data = {
         'username': username
     }
-    response = api_post(url, json=data)
+    response = api_post(url, json=data, params=params)
     body = response.json()
     return body.get('username'), body.get('hash')
